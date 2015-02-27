@@ -7,7 +7,7 @@ ENV HOME /root
 RUN apt-get update && apt-get dist-upgrade -yq && \
     apt-get install python-dev liblua5.1-0-dev git \
     libpcre3-dev libssl-dev mysql-client libmysqlclient-dev \
-    g++ libgeoip-dev gettext cmake -yq && \
+    g++ libgeoip-dev gettext cmake wget -yq && \
     apt-get clean -y && \
     apt-get autoclean -y && \
     rm -fr /var/lib/apt && \
